@@ -1,0 +1,16 @@
+{
+  "name": "mostly",
+  "description": "Official Mostly skills for coding agents: images, video, product photoshoots and postable carousels via the mostly CLI.",
+  "owner": {
+    "name": "Mostly",
+    "url": "https://mostly.so"
+  },
+  "plugins": [
+    {
+      "name": "mostly",
+      "source": "./plugin",
+      "description": "Generate images and videos, run product photoshoots, and build postable carousels with Mostly via the `mostly` CLI.",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "so.mostly/mcp",
+  "title": "Mostly",
+  "description": "Your content team: on-brand carousels, images, videos and social posts for small product brands.",
+  "version": "1.0.0",
+  "websiteUrl": "https://mostly.so",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mostly.so/api/mcp"
+    }
+  ]
+}
