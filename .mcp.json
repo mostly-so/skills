@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mostly": {
+      "type": "http",
+      "url": "https://mostly.so/api/mcp"
+    }
+  }
+}
