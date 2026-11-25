@@ -1,23 +1,23 @@
 ---
-name: mostly-slides
+name: carousel-generator
 description: |
-  Create multi-slide carousels and slide decks with Mostly via the `mostly` CLI,
-  edit or re-render individual slides, and turn a finished deck into a
-  TikTok / Instagram / LinkedIn / X / Facebook post draft.
+  Plan and render multi-slide carousels and slide decks with Mostly, edit or
+  re-render single slides, and turn a finished deck into a TikTok / Instagram /
+  LinkedIn / X / Facebook post.
   Use when: "carousel", "slide deck", "slides", "Instagram carousel",
   "TikTok photo post", "LinkedIn carousel", "turn this into slides",
   "post/schedule this carousel".
-  NOT for: single images or video (use mostly-generate), product photo sets
-  (use mostly-product-photoshoot).
-argument-hint: "[topic or outline] [--slides N] [--ratio 3:4]"
-allowed-tools: Bash
+  NOT for: single images or video (use image-and-video-generation), product photo sets
+  (use product-photoshoot).
 ---
 
-# Mostly Slides
+# Carousel generator
+
+**Calling Mostly:** the commands below use the `mostly` CLI. If the Mostly MCP tools are connected instead, call the same tool names directly (`mostly tools call X --args '{…}'` is the MCP tool `X` with those arguments). Setup, brands and credits: the `mostly` skill.
 
 Plan and render a full carousel in one call; Mostly writes the slide copy, art-directs every slide and renders the images in the background. All calls go through `mostly tools call`, plus `mostly slides get --wait` to collect the result.
 
-## Step 0 — Bootstrap
+## Step 0 — Bootstrap (CLI only; skip with MCP)
 
 `mostly` on `$PATH` (`npm i -g mostly`), then `mostly auth status`. If not logged in, ask the user to run `mostly auth login` themselves. For a branded deck, get the brand id with `mostly brands list`.
 

@@ -1,25 +1,25 @@
 ---
-name: mostly-product-photoshoot
+name: product-photoshoot
 description: |
-  Product photography with Mostly via the `mostly` CLI: studio packshots,
+  Product photography with Mostly: studio packshots,
   lifestyle scenes, close-ups, conceptual/splash shots, hero banners, and
   coordinated ad sets, from a product photo or a saved brand product.
   Use when: "product photos", "photoshoot", "packshot", "white background",
   "lifestyle shot", "Shopify/Amazon listing images", "product ads", "ad set",
   "photos of my product".
-  NOT for: non-product visuals or video (use mostly-generate), carousels
-  (use mostly-slides).
-argument-hint: "[product photo path or product name] [style]"
-allowed-tools: Bash
+  NOT for: non-product visuals or video (use image-and-video-generation), carousels
+  (use carousel-generator).
 ---
 
-# Mostly Product Photoshoot
+# Product photoshoot
+
+**Calling Mostly:** the commands below use the `mostly` CLI. If the Mostly MCP tools are connected instead, call the same tool names directly (`mostly tools call X --args '{…}'` is the MCP tool `X` with those arguments). Setup, brands and credits: the `mostly` skill.
 
 Shoot products with `mostly generate` using an image model and the product as a reference. This skill tells you what to write in the prompt and which options to pass.
 
-## Step 0 — Bootstrap
+## Step 0 — Bootstrap (CLI only; skip with MCP)
 
-Same as mostly-generate: `mostly` on `$PATH` (`npm i -g mostly`), then `mostly auth status`. If not logged in, ask the user to run `mostly auth login` themselves.
+Same as image-and-video-generation: `mostly` on `$PATH` (`npm i -g mostly`), then `mostly auth status`. If not logged in, ask the user to run `mostly auth login` themselves.
 
 ## 1. Get the product
 
@@ -60,4 +60,4 @@ mostly generate <imageModel> \
 ## 4. Deliver
 
 - List the URLs with a few words each ("studio hero", "lifestyle, kitchen").
-- Offer the next step: more variants, another scene, animate one (`mostly generate <videoModel> --start-image <url> …`, see mostly-generate), or a carousel (mostly-slides).
+- Offer the next step: more variants, another scene, animate one (`mostly generate <videoModel> --start-image <url> …`, see image-and-video-generation), or a carousel (carousel-generator).

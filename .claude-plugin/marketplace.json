@@ -1,6 +1,6 @@
 {
   "name": "mostly",
-  "description": "Official Mostly skills for coding agents: images, video, product photoshoots and postable carousels via the mostly CLI.",
+  "description": "Social media content skills for AI agents: find outlier posts, mine comments, tear down competitors, then make carousels, product photos and UGC videos and schedule them, with Mostly.",
   "owner": {
     "name": "Mostly",
     "url": "https://mostly.so"
@@ -8,9 +8,9 @@
   "plugins": [
     {
       "name": "mostly",
-      "source": "./plugin",
-      "description": "Generate images and videos, run product photoshoots, and build postable carousels with Mostly via the `mostly` CLI.",
-      "version": "0.1.0"
+      "source": "./",
+      "description": "Find what's working on TikTok, Instagram and YouTube, make your brand's version, and schedule it. 15 skills plus the Mostly MCP server.",
+      "version": "0.2.0"
     }
   ]
 }

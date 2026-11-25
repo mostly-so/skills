@@ -1,0 +1,27 @@
+{
+  "name": "mostly",
+  "version": "0.2.0",
+  "description": "Social media content skills: outlier posts, comment mining, creator and competitor teardowns, viral post breakdowns, carousel cloning and remixing, product photoshoots, UGC videos and post scheduling, powered by Mostly.",
+  "author": {
+    "name": "Mostly",
+    "url": "https://mostly.so"
+  },
+  "homepage": "https://mostly.so",
+  "privacyPolicyUrl": "https://mostly.so/privacy",
+  "repository": "https://github.com/mostly-so/social-media-content-skills",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "social-media",
+    "content-marketing",
+    "outlier-posts",
+    "tiktok",
+    "instagram",
+    "youtube",
+    "ugc",
+    "carousel",
+    "product-photography",
+    "competitor-analysis",
+    "social-media-scheduling"
+  ]
+}

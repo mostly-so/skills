@@ -1,26 +1,26 @@
 ---
-name: mostly-generate
+name: image-and-video-generation
 description: |
-  Generate images and videos with Mostly from the terminal via the `mostly` CLI.
+  Generate images and videos with Mostly's image and video models.
   Use when: "generate an image", "make a video", "animate this photo",
   "image-to-video", "edit/restyle this image", "make variants", "which models
   does Mostly have", or the user wants a visual for their brand.
   Brand products are first-class: pass a product id and its photos and facts
   are applied automatically.
-  NOT for: product photography sets (use mostly-product-photoshoot),
-  carousels / slide decks and posting them (use mostly-slides).
-argument-hint: "[prompt] [--model <id>] [--image <path>]"
-allowed-tools: Bash
+  NOT for: product photography sets (use product-photoshoot),
+  carousels / slide decks and posting them (use carousel-generator).
 ---
 
-# Mostly Generate
+# Image and video generation
+
+**Calling Mostly:** the commands below use the `mostly` CLI. If the Mostly MCP tools are connected instead, call the same tool names directly (`mostly tools call X --args '{…}'` is the MCP tool `X` with those arguments). Setup, brands and credits: the `mostly` skill.
 
 Generate images and videos through the `mostly` CLI. One command covers both: the model id decides whether it's an image or a video.
 
-## Step 0 — Bootstrap
+## Step 0 — Bootstrap (CLI only; skip with MCP)
 
 1. If `mostly` is not on `$PATH`: `npm i -g mostly`.
-2. Run `mostly auth status`. If it says "Not logged in", ask the user to run `mostly auth login` themselves (it asks for an API key from Settings → Organization → API) and wait. Never ask the user to paste the key into chat.
+2. Run `mostly auth status`. If it says "Not logged in", ask the user to run `mostly auth login` themselves (it opens the browser to sign in) and wait. Never ask the user to paste an API key into chat.
 3. If the workspace has several brands and the request is about one of them, run `mostly brands list` and pass `--brand <id>` (or `mostly brands use <id>` once). If the user's brand isn't there yet, add it from its website with `mostly tools call create_brand --args '{"url":"https://…"}'`; analysis takes a few minutes, so re-run `mostly brands list` until its status is `COMPLETED`.
 
 ## UX rules
@@ -76,4 +76,4 @@ Prompt from a file or a heredoc: `cat prompt.txt | mostly generate <model> --wai
 
 ## Anything else
 
-Every Mostly tool is reachable: `mostly tools list`, then `mostly tools get <name>` for its inputs and `mostly tools call <name> --args '{…}'`. For example, brand memory, the creative library, and following competitors with `follow_source` and `list_followed_sources`.
+Every Mostly tool is reachable: `mostly tools list`, then `mostly tools get <name>` for its inputs and `mostly tools call <name> --args '{…}'`. For example brand memory (`search_brand_memory`), reference photos to make images look real (`search_reference_photos`), and social research (`search_social_posts`, `get_account_outliers`; see the `outlier-post-finder` skill).
