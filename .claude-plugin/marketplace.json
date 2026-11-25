@@ -9,8 +9,8 @@
     {
       "name": "mostly",
       "source": "./",
-      "description": "Find what's working on TikTok, Instagram and YouTube, make your brand's version, and schedule it. 15 skills plus the Mostly MCP server.",
-      "version": "0.2.0"
+      "description": "Find what's working on TikTok, Instagram and YouTube, make your brand's version, and schedule it. 16 skills plus the Mostly MCP server.",
+      "version": "0.3.0"
     }
   ]
 }

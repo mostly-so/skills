@@ -1,6 +1,6 @@
 ---
 name: mostly
-description: Set up Mostly and route requests to it. Mostly is a content team for product brands - live social research (outlier posts, comments and accounts on TikTok, Instagram and YouTube), carousels, product photos, AI images and video, UGC videos and scheduled posts. Use when the user mentions Mostly, wants to connect it, asks what it can do, hits a sign-in or credit error, or needs a Mostly tool that no other skill covers.
+description: Set up Mostly and route requests to it. Mostly is a content team for product brands - live social research (outlier posts, comments and accounts on TikTok, Instagram and YouTube; Meta ads), carousels, product photos, AI images and video, UGC videos and scheduled posts. Use when the user mentions Mostly, wants to connect it, asks what it can do, hits a sign-in or credit error, or needs a Mostly tool that no other skill covers.
 ---
 
 # Mostly
@@ -48,6 +48,7 @@ Most tools work for one brand: its voice, palette, products and connected accoun
 |---|---|
 | `search_social_posts`, `search_social_creators` | 1 credit per platform searched |
 | `get_account_outliers` | 1 credit per account |
+| `search_meta_ads` | 1 credit per search |
 | `get_post_comments` | 1 credit per post |
 | `search_reference_photos` | 1 credit per search |
 | Any of the above repeated within 24 hours | Free |
@@ -66,6 +67,7 @@ Say what a step will cost before running anything large, and keep to what the us
 | What viewers ask, love and roast under a post | `comment-mining` |
 | Why one account works | `creator-teardown` |
 | Several competitors compared | `competitor-research` |
+| Competitors' Facebook and Instagram ads | `ad-library-teardown` |
 | One post taken apart, with a reusable template | `viral-post-breakdown` |
 | A carousel with the same look as a post | `clone-viral-carousel` |
 | A proven post turned into an on-brand carousel | `remix-winning-post` |
@@ -80,5 +82,5 @@ Say what a step will cost before running anything large, and keep to what the us
 
 - **Posting needs the user's approval.** Agents create drafts; the user approves them in Mostly under **Publish**.
 - **Proof is real or absent.** Reviews, sales counts and ratings come from material the user gives you, never generated.
-- **Public data only.** Research covers public TikTok, Instagram and YouTube posts and accounts.
+- **Public data only.** Research covers public TikTok, Instagram and YouTube posts and accounts, and active Meta Ad Library ads.
 - **Cite.** Give post links and the numbers a conclusion rests on.

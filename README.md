@@ -43,6 +43,7 @@ Setup for every client: [mostly.so/docs/mcp/setup](https://mostly.so/docs/mcp/se
 | [`comment-mining`](skills/comment-mining/) | Hear what viewers ask, want, object to and roast | Voice-of-customer report with verbatim quotes, FAQs, content ideas |
 | [`creator-teardown`](skills/creator-teardown/) | Understand why one creator or brand account works | Pillars, formats, hook patterns, cadence, a playbook to copy |
 | [`competitor-research`](skills/competitor-research/) | Compare several competitors side by side | Comparison table, category patterns, gaps you can own |
+| [`ad-library-teardown`](skills/ad-library-teardown/) | See which Facebook and Instagram ads competitors keep running | Longest-running ads, angles, hooks, offers, a test plan |
 | [`viral-post-breakdown`](skills/viral-post-breakdown/) | Take one post or Meta ad apart | Hook, shot-by-shot or slide-by-slide structure, transcript, a fill-in template |
 
 ### Make: your brand's version
@@ -89,6 +90,10 @@ Compare Glossier, Rare Beauty and Summer Fridays on TikTok. Where's the gap for 
 ```
 
 ```text
+Which Meta ads has Liquid Death been running the longest, and what angles should we test?
+```
+
+```text
 Clone this carousel's look for our brand, about 5 cold brew mistakes: https://www.tiktok.com/@…/photo/…
 ```
 
@@ -104,7 +109,8 @@ Find what's working for skincare brands this week, make three carousels for us f
  comment-mining            remix-winning-post               │
  creator-teardown          carousel-generator               ▼
  competitor-research       ugc-video                 content-performance-review
- viral-post-breakdown      product-photoshoot               │
+ ad-library-teardown       product-photoshoot               │
+ viral-post-breakdown                                       │
                            image-and-video-generation       │
         ▲                                                   │
         └──────────── what worked feeds the next search ────┘
@@ -120,7 +126,7 @@ Find what's working for skincare brands this week, make three carousels for us f
 4. **Borrow the pattern, not the post.** Remixes and clones take structure and style, never a creator's face, photos or copy.
 5. **Spend in the open.** Research costs 1 credit per platform or account (repeats within 24 hours are free), and renders are priced before they run.
 6. **You approve what goes live.** Agents create drafts; you approve them in Mostly.
-7. **Public data only.** Research covers public TikTok, Instagram and YouTube posts and accounts, plus Meta Ad Library ads by link.
+7. **Public data only.** Research covers public TikTok, Instagram and YouTube posts and accounts, and active ads in the Meta Ad Library.
 
 ## Claude Code plugin
 

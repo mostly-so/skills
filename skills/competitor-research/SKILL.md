@@ -21,7 +21,7 @@ Cost: 1 credit per account per platform. Say the total before running.
 
 `get_account_outliers` with `account` and `platform` for each. Note median views, the outlier count, and the top posts' formats, topics and hooks. For the two or three best outliers across all accounts, `import_creative` (with the `searchResult`) and `video_breakdown` / `slides_breakdown` to see the structure.
 
-Optional: `get_post_comments` on one top post per leading account, to hear what their audience asks for.
+Optional: `get_post_comments` on one top post per leading account, to hear what their audience asks for, and `search_meta_ads` with each competitor's name for their paid side (see `ad-library-teardown`).
 
 ## Output
 
